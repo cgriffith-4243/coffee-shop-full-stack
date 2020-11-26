@@ -46,8 +46,27 @@ export class DrinkFormComponent implements OnInit {
   }
 
   saveClicked() {
-    this.drinkService.saveDrink(this.drink);
-    this.closeModal();
+    if (this.drink.title != '' && this.validateRecipe()) {
+      this.drinkService.saveDrink(this.drink);
+      this.closeModal();
+    }
+  }
+
+  //basic pseudo validator to prevent bad form submissions
+  private validateRecipe(): boolean {
+    if (this.drink.recipe.length < 1){
+      return false;
+    }
+    for (const ingredient of this.drink.recipe) {
+      if (!ingredient['name'] 
+          || !ingredient['color'] 
+          || !ingredient['parts'] 
+          || ingredient['name'] == '' 
+          || ingredient['parts'] < 1){
+        return false;
+      }
+    }
+    return true;
   }
 
   deleteClicked() {

@@ -3,6 +3,10 @@ venv/
 __pycache__/
 test.db
 
+node_modules/
+/__pycache__
+/env
+
 # OS generated files #
 ######################
 .DS_Store
