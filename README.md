@@ -18,7 +18,7 @@ README documentation for the Frontend and Backend of this application:
 
 ## Project Setup
 
-The ./frontend directory contains the environment variables of this project, found within (./frontend/src/environment/environment.ts). These should reflect the Auth0 configuration details set up for the backend app.
+The [`./frontend/`](./frontend/) directory contains the environment variables of this project, found within [`./frontend/src/environment/environment.ts`](./frontend/src/environment/environment.ts). These should reflect the Auth0 configuration details set up for the backend app.
 
 ## Authors
 
