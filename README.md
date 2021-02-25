@@ -16,6 +16,10 @@ README documentation for the Frontend and Backend of this application:
 1. [`./frontend/`](./frontend/README.md)
 2. [`./backend/`](./backend/README.md)
 
+## Project Setup
+
+The ./frontend directory contains the environment variables of this project, found within (./frontend/src/environment/environment.ts). These should reflect the Auth0 configuration details set up for the backend app.
+
 ## Authors
 
 Cameron Griffith implemented the [`backend`](./backend/) for this project, authoring the [`API`](./backend/src/api.py), and integrated the [`Auth0 API`](./backend/src/auth/auth.py) into this project. Additionally, modified user [`login functionality`](./frontend/src/app/services/auth.service.ts) to work with callback url associated with the Auth0 account on this project.
